@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+
+/*!-------------RESET----------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+/**-------------HEADER----------------*/
+
+header{
+    background-color: #0ACDEB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    color: black;
+    background-color: white;
+    border: 2px solid #cf81f0;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+header a img{
+    width: 200px;
+    height: 200px;
+}
+
+.hero {
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 80vh;
+    background-image: url("../img/backgound.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1{
+    font-size: 200px;
+}
+
+.hero p{
+    font-size: 100px;
+}
+
+.nosotros {
+    background-image: none;
+    background-color: #CF81F0;
+}
+
+.nosotros h2{
+    text-align: center;
+    color: black;
+    font-size: 180px;
+
+}
+
+.nosotros p{
+    text-align: center;
+    color: black;
+    font-size: 86px
+}
+
+header nav ul {
+    list-style: none;
+}
+
+/*?-------------MAIN----------------*/
+.galeriaprivada{
+    background-color: #CF81F0;
+}
+
+
+.productos{
+    background-color:#0ACDEB;
+
+}
+
+.galeriaprivada img {
+    width: 500px;
+    height: 500px;
+}
+
+.galeriaprivada h2{
+    text-align: center;
+    color:  black;
+    background-color: red;
+    font-size: 80px;
+    font-weight: 400;
+    border: 2px solid #CF81F0;
+    border-radius: 18px;
+    padding: 8px;
+    font-weight: 600;
+}
+
+
+.galeriaprivada div h3{
+    text-align: center;
+    color: black;
+    font-size: 40px;
+
+}
+
+.divpadregale{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.galeriaprivada .divpadregale div{
+    width: 500px;
+    height: 650px;
+    border: 2px solid black;
+    text-align: center;
+    margin: 10px;
+    
+}
+
+.productos h2{
+    text-align: center;
+    color:  black;
+    background-color: red;
+    font-size: 80px;
+    font-weight: 400;
+    border: 2px solid #CF81F0;
+    border-radius: 18px;
+    padding: 8px;
+    font-weight: 600;
+}
+
+.divpadreprod{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.productos .divpadreprod div{
+    width: 400px;
+    height: 550px;
+    border: 2px solid black;
+    text-align: center;
+    margin: 10px;
+}
+
+.productos div h3{
+    text-align: center;
+    color: black;
+    font-size: 40px;
+
+}
+
+.productos div img{
+    width: 400px;
+    height: 400px;
+}
+
+.productos div a{
+    text-decoration: none;
+    color:  black;
+    background-color: white;
+    padding: 5px;
+    border: 2px solid #cf81f0;
+    font-size: 30px;
+    border-radius: 18px;
+    font-weight: 200;
+    position: relative;
+    top: 30px;
+}
+
+
+
+/*-------------FOOTER----------------*/
+footer{
+    background-color:#CF81F0;
+}
+
+
+footer a img{
+    width: 100px;
+    height: 100px;
+}
+
+footer iframe {
+    width: 200px;
+    height: 200px;
+}
+
+footer p{
+    text-align: center;
+    color: black;
+    font-size: 86px;
+}
+
+
+.div-footer {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+@media screen and (max-width: 1760px){
+    .hero{
+        display: none;
+    }
+    .div-footer{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 220px;
+    }
+    
+}
